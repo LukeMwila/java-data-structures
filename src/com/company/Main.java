@@ -74,6 +74,11 @@ public class Main {
          * */
 
         HashMap users = new HashMap<>();
+        HashMap<String, Integer> newUser = new HashMap<>();
+
+        newUser.put("Sue", 34);
+
+        System.out.println(newUser.get("Sue"));
 
         users.put("Kealy", 34);
         users.put("Bonni", 25);
