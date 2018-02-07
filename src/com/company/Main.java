@@ -25,11 +25,14 @@ public class Main {
         int[] newArray = new int[5];
         String[] newStringArray = new String [5];
 
-        newArray[0] = 3;
-        newArray[1] = 5;
-        newArray[2] = 17;
+        newArray[0] = 32;
+        newArray[1] = 55;
+        newArray[2] = 171;
         newArray[3] = 27;
         newArray[4] = 72;
+
+        // Sort
+        Arrays.sort(newArray);
 
         for(int number : newArray){
             System.out.println("Item #: " + number);
@@ -42,7 +45,14 @@ public class Main {
         newStringArray[4] = "Fred";
 
         for(String name : newStringArray){
-            System.out.println("Name : " + name);
+            System.out.println("Name before sorting: " + name);
+        }
+
+        // Sort
+        Arrays.sort(newStringArray);
+
+        for(String name : newStringArray){
+            System.out.println("Name after sorting: " + name);
         }
 
         /**
